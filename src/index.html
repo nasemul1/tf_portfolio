@@ -1,0 +1,224 @@
+<!-- src/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThemeFisher Portfolio</title>
+    <link href="../dist/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body class="w-screen h-screen bg-[#121414] bg-back bg-cover font-dmsans relative">
+    <div class="container w-full max-w-[1320px] mx-auto bg-[#121414] grid grid-cols-12">
+        <header id="top" class="col-start-1 col-span-12 py-4 grid grid-cols-12 gap-3 md:gap-x-6 md:fixed">
+            <div class="col-start-2 col-span-3">
+                <p class="text-sm md:text-xl 2xl:text-[32px] text-white font-bold ">Darly <span class="bg-gradient-to-r from-[#F5BD4D] to-[#F89222] inline-block text-transparent bg-clip-text">Smith</span></p>
+                <p class="text-[12px] md:text-md 2xl:text-lg text-[#C2C2C2]">UI/UX designer</p>
+            </div>
+            <div class="w-full col-start-5 col-span-7 flex items-center justify-between">
+                <a href="" class="ml-3 md:ml-7 flex items-center gap-x-2 xl:gap-x-4">
+                    <img src="../src/assets/icon/home.png" alt="home icon" class="w-6 md:w-8 2xl:w-10">
+                    <p class="text-sm md:text-lg 2xl:text-2xl text-white font-bold">Home</p>
+                </a>
+                <div>
+                    <div class="rounded-full bg-gradient-to-r from-[#F5BD4D] to-[#F89222] p-[2px] flex items-center justify-center">
+                        <a href="" class="px-3 2xl:px-5 py-1 md:py-2 2xl:py-3 rounded-full flex h-full w-full items-center justify-center bg-gray-800 back">
+                            <h1 class="text-[12px] md:text-[16px] 2xl:text-lg font-bold bg-gradient-to-r from-[#F5BD4D] to-[#F89222] inline-block text-transparent bg-clip-text">Talk To Me</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="menu" class="py-10 bg-[#121414] col-start-1 col-span-1 sticky hidden lg:flex flex-col items-center gap-y-8">
+                <a href="#home" class="group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-gray-500 group-hover:stroke-[#F5BD4D] transition-colors">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12L11.204 3.045c.44-.44 1.152-.44 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </a>
+                <a href="#resume" class="group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-gray-500 group-hover:stroke-[#F5BD4D] transition-colors">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+                </a>
+                <a href="#portfolio" class="group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-gray-500 group-hover:stroke-[#F5BD4D] transition-colors">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                    </svg>
+                </a>
+                <a href="#blog" id="navLink" class="group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#646464" class="w-6 h-6 stroke-gray-500 group-hover:stroke-[#F5BD4D] transition-colors">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                    </svg>
+                </a>
+                <a href="#contact" id="navLink" class="group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#646464" class="w-6 h-6 stroke-gray-500 group-hover:stroke-[#F5BD4D] transition-colors">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                </a>
+            </div>
+            <div class="mt-5 md:mt-0 col-start-3 md:col-start-2 col-span-8 md:col-span-3 w-full flex flex-col items-center">
+                <img src="./assets/profile.png" alt="profile photo" class="w-full bg-black">
+                <div class="w-full py-2 bg-black flex justify-center gap-x-3 ">
+                    <a href="#" class="rounded-full bg-[#121414]">
+                        <img src="./assets/icon/face.png" alt="facebook icon">
+                    </a>
+                    <a href="#" class="rounded-full bg-[#121414]">
+                        <img src="./assets/icon/linkedin.png" alt="facebook icon">
+                    </a>
+                    <a href="#" class="rounded-full bg-[#121414]">
+                        <img src="./assets/icon/pin.png" alt="facebook icon">
+                    </a>
+                    <a href="#" class="rounded-full bg-[#121414]">
+                        <img src="./assets/icon/insta.png" alt="facebook icon">
+                    </a>
+                    <a href="#" class="rounded-full bg-[#121414]">
+                        <img src="./assets/icon/twitter.png" alt="facebook icon">
+                    </a>
+                </div>
+            </div>  
+        </header>
+        <main class="mt-7 md:mt-11 pl-3 pt-3 md:pl-7 md:pt-7 col-start-2 col-span-10 md:col-start-5 md:col-span-7 overflow-y-auto z-10">
+            <section id="home" class="w-full mt-6">
+                <p class="text-[16px] font-bold bg-gradient-to-r from-[#F5BD4D] to-[#F89222] inline-block text-transparent bg-clip-text">INTRODUCTION</p>
+                <h1 class="text-[32px] md:text-[48px] text-white font-bold">I'm a Creative Developer & <br>
+                    UI/UX Design Expert</h1>
+                <p class="mt-2 text-[16px] text-white font-bold">24 years   /   Robert Smith   /   UK London</p>
+                <p class="mt-5 text-[16px] text-white">Prolific, full stack web developer with a passion for metrics and beating former
+                    "best-yets. Prototyped 25 new product features per year for Flexor, Inc.
+                    Decreased rework by 22% and costs by 15%. Consistently receive high
+                    user experience scores for all web development projects, including a
+                    55% increase for Flexor, Inc. Passionate about building world class web
+                    applications. One of my sites received a 2020 Webby for Best 
+                    Navigation and Structure.</p>
+                <button class="mt-5 px-5 py-3 text-[16px] text-white font-bold rounded-full bg-gradient-to-r from-[#F5BD4D] to-[#F89222] cursor-pointer">Download CV</button>
+            </section>
+            <section id="resume" class="w-full mt-24">
+                <h2 class="text-[32px] md:text-[48px] text-white font-bold">Resume</h2>
+                <div class="w-full text-white font-sans flex items-center">
+                    <div class="w-full max-w-2xl">
+                        <div class="mt-4 mb-6 flex gap-x-4">
+                            <img src="./assets/icon/edu.png" alt="edu icon">
+                            <p class="text-[24px] text-white font-bold">Education</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute top-0 left-4 h-full border-l-2 border-[#646464]"></div>
+                            <div class="relative mb-12 pl-12">
+                                <div class="absolute left-0 top-0 w-8 h-8 bg-gray-900 border-2 border-gray-600 rounded-full flex items-center justify-center">
+                                    <span class="w-fit text-yellow-500 leading-none">⧫</span>
+                                </div>
+                                <div class="p-6 rounded-lg shadow-md">
+                                    <div class="p-2 w-fit text-sm text-white font-bold mb-2 rounded-lg border border-[#FFFFFF1A] border-opacity-10">2016-2020</div>
+                                    <div class="px-4 py-6 rounded-lg border border-[#FFFFFF1A] border-opacity-10">
+                                        <h3 class="text-xl font-semibold text-yellow-500">Harvard University</h3>
+                                        <p class="text-gray-400 text-sm mb-4">B.A. and M.S., Computer Science</p>
+                                        <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Education Item 2 -->
+                            <div class="relative mb-12 pl-12">
+                                <div class="absolute left-0 top-0 w-8 h-8 bg-[#121414] border-2 border-[#646464] rounded-full flex items-center justify-center">
+                                    <span class="w-fit text-yellow-500 leading-none">⧫</span>
+                                </div>
+                                <div class="p-6 rounded-lg shadow-md">
+                                    <div class="p-2 w-fit text-sm text-white font-bold mb-2 rounded-lg border border-[#FFFFFF1A] border-opacity-10">2014-2016</div>
+                                    <div class="px-4 py-6 rounded-lg border border-[#FFFFFF1A] border-opacity-10">
+                                        <h3 class="text-xl font-semibold text-yellow-500">Helwan University</h3>
+                                        <p class="text-gray-400 text-sm mb-4">Bachelor Degree</p>
+                                        <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skill" class="w-full mt-24">
+                <h2 class="text-[32px] md:text-[48px] text-white font-bold">Skill</h2>
+                <div class="w-full flex flex-col gap-y-4">
+                    <div class="w-full">
+                        <div class="mb-2 text-[18px] md:text-[24px] text-white flex justify-between">
+                            <p>UI/UX Desgin</p>
+                            <p class="">95%</p>
+                        </div>
+                        <img src="./assets/skill/95.png" alt="skill parcentage">
+                    </div>
+                    <div class="w-full">
+                        <div class="mb-2 text-[18px] md:text-[24px] text-white flex justify-between">
+                            <p>Photography</p>
+                            <p class="">90%</p>
+                        </div>
+                        <img src="./assets/skill/90.png" alt="skill parcentage">
+                    </div>
+                    <div class="w-full">
+                        <div class="mb-2 text-[18px] md:text-[24px] text-white flex justify-between">
+                            <p>Creativity</p>
+                            <p class="">80%</p>
+                        </div>
+                        <img src="./assets/skill/80.png" alt="skill parcentage">
+                    </div>
+                    <div class="w-full">
+                        <div class="mb-2 text-[18px] md:text-[24px] text-white flex justify-between">
+                            <p>Team Work</p>
+                            <p class="">95%</p>
+                        </div>
+                        <img src="./assets/skill/95.png" alt="skill parcentage">
+                    </div>
+                    <div class="w-full">
+                        <div class="mb-2 text-[18px] md:text-[24px] text-white flex justify-between">
+                            <p>Web Design</p>
+                            <p class="">95%</p>
+                        </div>
+                        <img src="./assets/skill/95.png" alt="skill parcentage">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div id="menu-bottom" class="col-start-1 col-span-1 fixed bottom-0 z-50 w-full px-4 py-4 bg-[#121414] border border-gray-500 rounded-lg lg:hidden flex flex-row justify-around items-center gap-x-8">
+        <a href="#home" class="group">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-gray-500 group-hover:stroke-[#F5BD4D] transition-colors">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12L11.204 3.045c.44-.44 1.152-.44 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+        </a>
+        <a href="#resume" class="group">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-gray-500 group-hover:stroke-[#F5BD4D] transition-colors">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+            </svg>
+        </a>
+        <a href="#portfolio" class="group">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-gray-500 group-hover:stroke-[#F5BD4D] transition-colors">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+            </svg>
+        </a>
+        <a href="#blog" id="navLink" class="group">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#646464" class="w-6 h-6 stroke-gray-500 group-hover:stroke-[#F5BD4D] transition-colors">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+            </svg>
+        </a>
+        <a href="#contact" id="navLink" class="group">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#646464" class="w-6 h-6 stroke-gray-500 group-hover:stroke-[#F5BD4D] transition-colors">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+        </a>
+    </div>
+    <script>
+        document.querySelectorAll('#route a').forEach((link) => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                document.querySelectorAll('#route svg').forEach((icon) => {
+                    icon.classList.remove('stroke-[#F5BD4D]');
+                    icon.classList.add('stroke-gray-500');
+                });
+
+                const svgIcon = this.querySelector('svg');
+                svgIcon.classList.remove('stroke-gray-500');
+                svgIcon.classList.add('stroke-[#F5BD4D]');
+            });
+        });
+    </script>
+</body>
+</html>
